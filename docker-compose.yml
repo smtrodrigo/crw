@@ -1,0 +1,21 @@
+version: '3.6'
+
+services:
+  octave-gui:
+    build: .
+    command: octave --gui
+    working_dir: /CRW
+    environment:
+      - DISPLAY=host.docker.internal:0
+    volumes:
+      - .:/CRW
+      - ./CrwStorage:/CrwStorage
+      - $HOME/.Xauthority:/root/.Xauthority:rw
+
+  octave:
+    build: .
+    working_dir: /CRW
+    command: octave
+    volumes:
+      - .:/CRW
+      - ./CrwStorage:/CrwStorage

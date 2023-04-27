@@ -1,0 +1,13 @@
+*
+!.gitignore
+!Bleaching.m
+!bleachingFunctions.m
+!docker-compose.yml
+!README.md
+!.env.example
+!.dockerignore
+!Dockerfile
+!readDotenvFile.m
+!seekNCFiles.m
+!isOctave.m
+!LICENSE.md
